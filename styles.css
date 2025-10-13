@@ -1,0 +1,69 @@
+:root {
+    --marine-blue: #0a1f44;
+    --light-blue: #e6f0ff;
+    --white: #ffffff;
+    --text-color: #f0f0f0;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--light-blue);
+    color: var(--marine-blue);
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: var(--marine-blue);
+    color: var(--white);
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  nav {
+    background-color: #132a50;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav a {
+    color: var(--white);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #a5c8ff;
+  }
+  
+  main {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  main h2 {
+    color: var(--marine-blue);
+    margin-bottom: 0.5rem;
+  }
+  
+  main p {
+    margin-bottom: 2rem;
+  }
+  
+  footer {
+    background-color: var(--marine-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
