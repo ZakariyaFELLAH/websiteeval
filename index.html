@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Site</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Bienvenue sur mon site</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="index.html">À propos</a>
+    <a href="index.html">Services</a>
+    <a href="CONTACT.html">Contact</a>
+  </nav>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const title = document.querySelector('header h1');
+      // Style initial
+      title.style.opacity = 0;
+      title.style.transform = 'translateX(-100px)';
+      title.style.transition = 'opacity 1s ease, transform 1s ease';
+  
+      setTimeout(() => {
+        title.style.opacity = 1;
+        title.style.transform = 'translateX(0)';
+      }, 100);
+    });
+  </script>
+  
+  
+  <main>
+    <section>
+      <h2>Notre mission</h2>
+      <p>
+        Bienvenue sur notre site web professionnel. Nous proposons des services
+        sur mesure pour répondre à vos besoins.
+      </p>
+    </section>
+
+    <section>
+      <h2>Pourquoi nous choisir ?</h2>
+      <p>
+        Expertise, qualité, et accompagnement personnalisé. Découvrez ce qui nous
+        rend uniques.
+      </p>
+
+    </section>
+  </main>
+
+  <footer>
+    &copy; FELLAH ZAKARIYA - SIO1A
+  </footer>
+
+</body>
+</html>
