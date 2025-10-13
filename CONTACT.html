@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Mon Site Bleu Marine</title>
+  <link rel="stylesheet" href="styles1.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Contactez-nous</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">RETOUR</a>
+  </nav>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const formSection = document.querySelector('.contact-section');
+      formSection.style.opacity = 0;
+      formSection.style.transform = 'scale(0.8)';
+      formSection.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+  
+      setTimeout(() => {
+        formSection.style.opacity = 1;
+        formSection.style.transform = 'scale(1)';
+      }, 100);
+    });
+  </script>
+  
+  
+  <main>
+    <section class="contact-section">
+      <h2>Envoyez-nous un message</h2>
+      <form action="#" method="post" class="contact-form">
+        <div class="form-group">
+          <label for="name">Nom :</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Sujet :</label>
+          <input type="text" id="subject" name="subject" />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; FELLAH ZAKARIYA - SIO1A
+  </footer>
+
+</body>
+</html>
