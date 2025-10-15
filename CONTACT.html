@@ -3,25 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact - Mon Site Bleu Marine</title>
+  <title>Contact - Mon Assoc</title>
   <link rel="stylesheet" href="styles1.css" />
 </head>
 <body>
 
   <header>
-    <h1>Contactez-nous</h1>
+    <h1>Bénévole ou contributeurs ? Contactez-nous</h1>
   </header>
 
   <nav>
     <a href="index.html">RETOUR</a>
   </nav>
   <script>
+    //UNE FOIS LA PAGE PRETE ET CHARGé ELLE EXECUTE LE PROG
     window.addEventListener('DOMContentLoaded', () => {
+      // chercher la page + stocker la variable "contact-section"
       const formSection = document.querySelector('.contact-section');
-      formSection.style.opacity = 0;
+      //style css
+      formSection.style.opacity = 0; 
       formSection.style.transform = 'scale(0.8)';
       formSection.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
-  
+  // mettre en place une intervale opacité 1/ taille 100 = normale transition = sur 0.8s
       setTimeout(() => {
         formSection.style.opacity = 1;
         formSection.style.transform = 'scale(1)';
